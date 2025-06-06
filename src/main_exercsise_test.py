@@ -1,0 +1,12 @@
+import unittest
+
+from main_exercise import max_hamsters
+
+class TestMaxHamsters(unittest.TestCase):
+    def test_cases(self):
+        self.assertEqual(max_hamsters(7, 3, [[1, 2], [2, 2], [3, 1]]), 2)  
+        self.assertEqual(max_hamsters(19, 4, [[5, 0], [2, 2], [1, 4], [5, 1]]), 3) 
+        self.assertEqual(max_hamsters(2, 2, [[1, 50000], [1, 60000]]), 1)  
+        self.assertEqual(max_hamsters(32, 4, [[1, 2], [3, 4], [5, 6], [7, 8]]), 2) 
+
+unittest.main()
